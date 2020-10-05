@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
 
     'home.apps.HomeConfig',
+    'patients.apps.PatientConfig'
 ]
 
 MIDDLEWARE = [
