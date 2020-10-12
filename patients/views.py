@@ -1,8 +1,14 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView, FormView
 
-# Create your views here.
-from django.views.generic import TemplateView
+from patients.forms import PatientForm
 
 
 class PatientsPageView(TemplateView):
     template_name = 'patients/patients.html'
+
+
+class PatientsFormView(FormView):
+    template_name = 'patients/patient_form.html'
+    form_class = PatientForm
+    success_url = '/'
