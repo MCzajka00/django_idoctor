@@ -22,3 +22,4 @@ class PatientEmail(models.Model):
 
     def __str__(self):
         return f"{self.patient_id.first_name} {self.patient_id.last_name} email: {self.email}"
+
